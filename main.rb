@@ -51,7 +51,7 @@ end
 
 ############ new_portfolio
 get "/new_portfolio" do
-  erb: new_portfolio
+  erb :new_portfolio
 end
 
 post "/new_portfolio" do
@@ -90,7 +90,7 @@ get "/edit_portfolio/:portfolio_id" do
   erb :edit_portfolio
 end
 
-############ save_client & new_portfolio & new_stock********************
+############ save_client & save_portfolio & save_stock********************
 post "/save_client/:client_id" do
   @client = Client.find_by_id(params[:client_id])
 
